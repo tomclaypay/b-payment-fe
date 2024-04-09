@@ -41,11 +41,95 @@
         </div>
       </div>
       <div>
-        <img
-          v-if="virtualTransactions[current]?.status === 'INITIAL'"
-          :src="virtualTransactions[current]?.qrUrl"
-          class="w-[300px] mx-auto"
-        />
+        <div class="grid grid-cols-2">
+          <div>
+            <label class="text-xs font-medium text-[#7C7C87] mt-5 block">
+              Ngân hàng:
+            </label>
+            <div
+              class="flex justify-between border-0 border-b border-solid border-[#F2F2F2] pb-1 items-center"
+            >
+              <div>
+                {{ virtualTransactions[current]?.bankName }}
+              </div>
+            </div>
+            <label class="text-xs font-medium text-[#7C7C87] mt-5 block">
+              Người nhận:
+            </label>
+            <div
+              class="flex justify-between border-0 border-b border-solid border-[#F2F2F2] pb-1 items-center"
+            >
+              <div>
+                {{ virtualTransactions[current]?.bankAccountName }}
+              </div>
+              <div
+                class="bg-[#F5F8FA] text-[#3554D1] cursor-pointer px-5 py-2 text-xs rounded"
+                @click="copyText(virtualTransactions[current]?.bankAccountName)"
+                variant="outline-primary"
+              >
+                Sao chép
+              </div>
+            </div>
+
+            <label class="text-xs font-medium text-[#7C7C87] mt-5 block">
+              Số tài khoản:
+            </label>
+            <div
+              class="flex justify-between border-0 border-b border-solid border-[#F2F2F2] pb-1 items-center"
+            >
+              <div>{{ virtualTransactions[current]?.bankAccountNo }}</div>
+              <div
+                class="bg-[#F5F8FA] text-[#3554D1] cursor-pointer px-5 py-2 text-xs rounded"
+                @click="copyText(virtualTransactions[current]?.bankAccountNo)"
+                variant="outline-primary"
+              >
+                Sao chép
+              </div>
+            </div>
+
+            <label class="text-xs font-medium text-[#7C7C87] mt-5 block">
+              Số tiền:
+            </label>
+            <div
+              class="flex justify-between border-0 border-b border-solid border-[#F2F2F2] pb-1 items-center"
+            >
+              <div>
+                {{ virtualTransactions[current]?.amount | formatPrice }}
+              </div>
+              <div
+                class="bg-[#F5F8FA] text-[#3554D1] cursor-pointer px-5 py-2 text-xs rounded"
+                @click="copyText(virtualTransactions[current]?.amount)"
+                variant="outline-primary"
+              >
+                Sao chép
+              </div>
+            </div>
+
+            <!-- <label class="text-xs font-medium text-[#7C7C87] mt-5 block">
+              Nội dung chuyển khoản:
+            </label>
+            <div
+              class="flex text-[#D0600F] justify-between border-0 border-b border-solid border-[#F2F2F2] pb-1 items-center"
+            >
+              <div>
+                {{ order?.code }}
+              </div>
+              <div
+                class="bg-[#F5F8FA] text-[#3554D1] cursor-pointer px-5 py-2 text-xs rounded"
+                @click="copyText(order?.code)"
+                variant="outline-primary"
+              >
+                Sao chép
+              </div>
+            </div> -->
+          </div>
+          <img
+            v-if="virtualTransactions[current]?.status === 'INITIAL'"
+            :src="virtualTransactions[current]?.qrUrl"
+            class="w-[300px] mx-auto"
+          />
+        </div>
+
         <div v-if="virtualTransactions[current]?.status === 'SUCCEED'">
           <img src="~/assets/images/check.svg" class="w-24 mx-auto block" />
           <div class="text-[#32BEA6] text-2xl font-bold mt-10 mb-2 text-center">
