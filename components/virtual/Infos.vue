@@ -209,6 +209,13 @@ export default {
       return true;
     },
     onReady() {},
+    copyText(text) {
+      navigator.clipboard.writeText(text);
+      this.$notify({
+        text: "Copied!",
+        type: "success",
+      });
+    },
   },
 };
 </script>
