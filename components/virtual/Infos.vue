@@ -24,15 +24,17 @@
                 ),
                 'bg-blue-100': current === index,
               }"
-              class="flex flex-row justify-between items-center w-full p-3 leading-tight transition-all rounded-lg outline-none text-start hover:bg-blue-200 focus:bg-blue-gray-50 focus:bg-opacity-80 focus:text-blue-gray-900 active:bg-blue-gray-50 active:bg-opacity-80 active:text-blue-gray-900 disabled:opacity-50 disabled:pointer-events-none"
+              class="grid grid-cols-5 items-center w-full p-3 leading-tight transition-all rounded-lg outline-none text-start hover:bg-blue-200 focus:bg-blue-gray-50 focus:bg-opacity-80 focus:text-blue-gray-900 active:bg-blue-gray-50 active:bg-opacity-80 active:text-blue-gray-900"
             >
-              <span>Giao dịch số {{ index + 1 }}</span>
-              <span>Số tiền: {{ transaction.amount | formatPrice }} VND</span>
-              <span>
+              <span class="col-span-2">Giao dịch số {{ index + 1 }}</span>
+              <span class="col-span-2"
+                >Số tiền: {{ transaction.amount | formatPrice }} VND</span
+              >
+              <span class="mx-auto">
                 <img
                   v-if="virtualTransactions[index]?.status === 'SUCCEED'"
                   src="~/assets/images/check.svg"
-                  class="mx-auto block h-3"
+                  class="block h-3"
               /></span>
             </div>
           </div>
