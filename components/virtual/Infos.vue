@@ -17,13 +17,6 @@
               :key="index"
               @click="current = index"
               role="button"
-              :class="{
-                'opacity-50 pointer-events-none': checkTransactions(
-                  transaction,
-                  index
-                ),
-                'bg-blue-100': current === index,
-              }"
               class="grid grid-cols-5 items-center w-full p-3 leading-tight transition-all rounded-lg outline-none text-start hover:bg-blue-200 focus:bg-blue-gray-50 focus:bg-opacity-80 focus:text-blue-gray-900 active:bg-blue-gray-50 active:bg-opacity-80 active:text-blue-gray-900"
             >
               <span class="col-span-2">Giao dịch số {{ index + 1 }}</span>
@@ -199,15 +192,6 @@ export default {
   },
 
   methods: {
-    checkTransactions(transaction, index) {
-      if (index === 0) return false;
-      if (
-        this.virtualTransactions[index - 1].status === "SUCCEED" ||
-        this.virtualTransactions[index - 1].status === "REVIEW"
-      )
-        return false;
-      return true;
-    },
     onReady() {},
     copyText(text) {
       navigator.clipboard.writeText(text);
