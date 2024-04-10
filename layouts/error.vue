@@ -2,7 +2,7 @@
   <div class="bg-[#f5f8fa]">
     <div class="bg-white home-container__header">
       <div class="container mx-auto flex items-center h-[70px] px-5 md:px-0">
-        <img src="~/assets/images/logo.svg" class="w-20" />
+        <!-- <img src="~/assets/images/logo.svg" class="w-20" /> -->
       </div>
     </div>
     <div class="container mx-auto mt-10">

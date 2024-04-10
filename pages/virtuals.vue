@@ -1,10 +1,5 @@
 <template>
   <div class="home-container" v-if="isReady">
-    <div class="bg-white home-container__header">
-      <div class="container mx-auto flex items-center h-[70px] px-5 md:px-0">
-        <img src="~/assets/images/logo.svg" class="w-20" />
-      </div>
-    </div>
     <div class="container mx-auto home-container__body">
       <div class="home-container__tabs">
         <div :class="active === 1 && 'active'" class="home-container__tab-1">
