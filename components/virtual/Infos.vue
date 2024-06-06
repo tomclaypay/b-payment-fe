@@ -196,7 +196,7 @@ export default {
     copyText(text) {
       navigator.clipboard.writeText(text);
       this.$notify({
-        text: "Copied!",
+        message: "Copied successfully!",
         type: "success",
       });
     },
