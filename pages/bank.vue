@@ -52,9 +52,9 @@ export default {
           if (data.status === "CANCELED" || data.status === "SUCCEED") {
             this.active = 2;
             clearInterval(this.interval);
-            if (data.redirectUrl) {
+            if (data.returnUrl) {
               // window.open(data.redirectUrl, "_blank", "noreferrer");
-              window.location = data.redirectUrl;
+              window.location = data.returnUrl;
             }
           }
 
