@@ -53,7 +53,7 @@ export default {
             this.active = 2;
             clearInterval(this.interval);
             if (data.returnUrl) {
-              // window.open(data.redirectUrl, "_blank", "noreferrer");
+              // window.open(data.returnUrl, "_blank", "noreferrer");
               window.location = data.returnUrl;
             }
           }
