@@ -15,7 +15,8 @@
         </div>
       </div>
 
-      <virtual-info :order="order" v-if="active === 1" />
+    <home-info :order="order" v-if="active === 1" />
+
       <home-status :order="order" v-if="active === 2" />
     </div>
   </div>
