@@ -2,7 +2,7 @@
   <div class="home-container" v-if="isReady">
     <div class="bg-white home-container__header">
       <div class="container mx-auto flex items-center h-[70px] px-5 md:px-0">
-        <img src="~/assets/images/logo.svg" class="w-20" />
+        <!-- <img src="~/assets/images/logo.svg" class="w-20" /> -->
       </div>
     </div>
     <div class="container mx-auto home-container__body">
@@ -49,10 +49,10 @@ export default {
           if (data.status === "CANCELED" || data.status === "SUCCEED") {
             this.active = 2;
             clearInterval(this.interval);
-            if (data.returnUrl) {
-              // window.open(data.returnUrl, "_blank", "noreferrer");
-              window.location = data.returnUrl;
-            }
+            // if (data.returnUrl) {
+            //   // window.open(data.returnUrl, "_blank", "noreferrer");
+            //   window.location = data.returnUrl;
+            // }
           }
 
           this.order = data;
