@@ -2,7 +2,7 @@
   <div class="home-container" v-if="isReady">
     <div class="bg-white home-container__header">
       <div class="container mx-auto flex items-center h-[70px] px-5 md:px-0">
-        <img src="~/assets/images/logo.png" class="w-15 h-15" />
+        <img src="~/assets/images/logo.png" class="w-9 ml-5" />
       </div>
     </div>
     <div class="container mx-auto home-container__body">
