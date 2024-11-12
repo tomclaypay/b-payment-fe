@@ -109,7 +109,7 @@
             </li>
           </ul>
         </div>
-        <div class="bg-[#F5F8FA] drop-shadow-md p-5 text-[#D0600F]">
+        <div class="bg-[#F5F8FA] drop-shadow-md p-5 text-[rgb(221,203,8)]">
           <div class="flex items-center text-[20px] font-bold mb-5">
             <img src="~/assets/images/warning.svg" class="mr-3 h-6" />
             Chú ý

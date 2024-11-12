@@ -1,5 +1,7 @@
-<svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M17.9761 9C17.9761 13.5563 14.2824 17.25 9.72607 17.25C5.16972 17.25 1.47607 13.5563 1.47607 9C1.47607 4.44365 5.16972 0.75 9.72607 0.75C14.2824 0.75 17.9761 4.44365 17.9761 9Z" stroke="#D0600F" stroke-width="1.5"/>
-<path d="M9.62573 5C9.62573 6.95262 9.62573 8.04738 9.62573 10" stroke="#D0600F" stroke-width="1.5" stroke-linecap="round"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M9.62571 14C10.1226 14 10.5253 13.5523 10.5253 13C10.5253 12.4477 10.1226 12 9.62571 12C9.12885 12 8.72607 12.4477 8.72607 13C8.72607 13.5523 9.12885 14 9.62571 14Z" fill="#D0600F"/>
-</svg>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Uploaded to: SVG Repo, www.svgrepo.com, Transformed by: SVG Repo Mixer Tools -->
+<svg fill="#ddcb08" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="800px" height="800px" viewBox="0 0 44.271 44.271" xml:space="preserve" stroke="#ddcb08">
+<g id="SVGRepo_bgCarrier" stroke-width="0"/>
+<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+<g id="SVGRepo_iconCarrier"> <g> <g> <path d="M42.355,10.833l-9.189-9.066c-1.092-1.091-2.674-1.684-4.217-1.684H14.547c-1.541,0-3.02,0.593-4.11,1.684l-8.909,9.076 C0.437,11.934,0,13.404,0,14.945v14.402c0,1.542,0.437,3.021,1.528,4.111l8.998,9.056c1.09,1.09,2.481,1.674,4.022,1.674h14.403 c1.541,0,3.021-0.584,4.111-1.674l9.295-9.071c1.09-1.09,1.914-2.555,1.914-4.097V14.944 C44.269,13.403,43.447,11.924,42.355,10.833z M22.134,32.766c-1.528,0-2.766-1.264-2.766-2.823c0-1.561,1.238-2.824,2.766-2.824 s2.767,1.264,2.767,2.824C24.9,31.502,23.662,32.766,22.134,32.766z M24.9,22.375c0,1.559-1.207,2.822-2.767,2.822 s-2.767-1.264-2.767-2.822v-11.65c0-1.559,1.207-2.824,2.767-2.824S24.9,9.166,24.9,10.724V22.375z"/> </g> </g> </g>
+</svg>
