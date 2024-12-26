@@ -23,7 +23,11 @@
           class="flex justify-between border-0 border-b border-solid border-[#F2F2F2] pb-1 items-center"
         >
           <div>
-            {{ bankObject.bankFullname }}
+            {{
+              bankObject.bankFullname
+                ? bankObject.bankFullname
+                : bankObject.bankName
+            }}
           </div>
         </div>
         <label class="text-xs font-medium text-[#7C7C87] mt-5 block">
