@@ -1,25 +1,29 @@
-FROM node:18-alpine
+FROM node:20-alpine
 
-# create destination directory
-RUN mkdir -p /usr/src/nuxt-app
+# Tạo thư mục app
 WORKDIR /usr/src/nuxt-app
 
-# copy the app, note .dockerignore
-COPY . /usr/src/nuxt-app/
-RUN yarn install
+# Copy package.json trước để tận dụng cache layer
+COPY package.json yarn.lock ./
 
-# set app serving to permissive / assigned
+# Cài dependencies
+RUN yarn install --frozen-lockfile
+
+# Copy toàn bộ source code
+COPY . .
+
+# Biến môi trường cho Nuxt
 ENV NUXT_HOST=0.0.0.0
 ENV NUXT_PORT=3000
 
 ARG API_URL
-ENV API_URL ${API_URL}
+ENV API_URL=${API_URL}
 
-# build
+# Build app
 RUN yarn build
 
-# expose port on container
+# Expose port
 EXPOSE 3000
 
-# start the app
-CMD [ "yarn", "start" ]
+# Start app
+CMD ["yarn", "start"]
