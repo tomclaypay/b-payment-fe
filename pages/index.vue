@@ -3,7 +3,7 @@
     <div class="bg-white home-container__header">
       <div class="container mx-auto flex items-center h-[70px] px-5 md:px-0">
         <img src="~/assets/images/logo.png" class="w-9 ml-5" />
-        <h2 class="ml-3 text-2xl font-bold text-[rgb(34,164,251)]">EPAY</h2>
+        <h2 class="text-2xl font-bold text-[rgb(34,164,251)]">EPAY</h2>
       </div>
     </div>
     <div class="container mx-auto home-container__body">
